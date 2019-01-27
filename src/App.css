@@ -1,32 +1,95 @@
-.App {
-  text-align: center;
+.header-wrapper{
+    font-family: 'Roboto Slab', serif;
+    border:1px solid grey;
+    letter-spacing: 15px;
+    text-align: center;
+    padding: 15px;
+    background: #015761;
+    color: #F7DB4F;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.search-section{
+    width:100%;
+    text-align: center;
+}
+.search-section .searchIcons{
+    padding: 10px;
+    margin:50px;
+    font-size:20px;
+    color: #015761;
+    background: #F7DB4F;
+    font-weight: bold;
+    border:2px solid #015761;
+    outline: none;
+    cursor: pointer;
+}
+.search-back-button{
+    border-radius: 4px;
+    padding: 5px;
+    outline: none;
+    font-size: 15px;
+    background:#015761;
+    color:#F7DB4F;
+    font-weight: bold;
+    position: absolute;
+    top:2%;
+    left:5%;
+}
+.search-form{
+    text-align: center;
+    margin:10px;
+}
+.search-form .search-button{
+    padding: 5px 10px;
+    margin: 10px;
+    border-radius: 4px;
+    outline: none;
+    font-size: 15px;
+    background:#015761;
+    color:#F7DB4F;;
+    font-weight: bold;
+}
+.search-form input{
+    width:20%;
+    padding: 15px 20px;
+    outline: none;
+    font-size: 15px;
+    border-radius: 7px;
+    border:2px solid #015761;
+}
+.arrow-icon{
+    transform: translate(-2px,2px);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.search-list{
+    list-style-type: none;
+    width: 300px;
+    margin: 10px;
+}
+.search-list{
+    text-align: center;
+    padding: 12px;
 }
 
-.App-link {
-  color: #61dafb;
+.poster-image{
+    width:200px;
+    border-radius: 10px;
+}
+.finished ,.wish{
+    display: inline;
+    margin:5px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size:15px;
+    background: rgba(2, 235, 60, 0.5);
+    color: green;
+    font-weight: bold;
+    border: 2px solid  #015761;
+    outline-color:#015761;
+    cursor: pointer;
+}
+.wish{
+    background: rgba(255, 187, 1);
+    color: green;  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
