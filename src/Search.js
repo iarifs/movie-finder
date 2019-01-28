@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 //our api key and api host.
 const API_KEY = "e6672dd2";
-const HOST = `http://www.omdbapi.com/?apikey=${API_KEY}&`;
+const HOST = `https://www.omdbapi.com/?apikey=${API_KEY}&`;
 
 
 //js es6 class called search 
