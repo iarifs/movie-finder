@@ -28,7 +28,6 @@ addToWant = (item)=> {
     return(
       <div>
         <Route exact path = "/" render ={ ()=>
-        
         <Header finished = {this.state.finished}
         want = {this.state.want} />  
         }/>

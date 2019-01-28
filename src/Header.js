@@ -8,13 +8,13 @@ class Header extends Component {
 
         return(
             <div>
-                <div className ="header-wrapper">
+                    <div className ="header-wrapper">
                     <h1>MOVIE FINDER</h1>
-                </div>
+                    </div> 
 
                 <section className ="search-section">
-                  <Link to = "/search" >
-                  <button className ="searchIcons">Search Movie</button>
+                  <Link to = "/search" >        
+                  <button className ="searchIcons">Search Movies</button>
                   </Link> 
                 </section>
 
@@ -25,7 +25,7 @@ class Header extends Component {
                         {this.props.finished.map((elem ,index)=>
                         <li key={index} className = "search-list">
                             <img  className = "poster-image"src={elem.Poster}
-                            onError={(e)=>{e.target.onerror = null;
+                            onError={(e)=>{
                             e.target.src="https://unfvideo.files.wordpress.com/2018/09/nia.jpg"}}
                             alt = {elem.Poster}/>
                             <p>{elem.Title}</p>

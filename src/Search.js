@@ -92,8 +92,8 @@ class Search extends React.Component {
                 alt={eachMovie.Poster} />
               <p>{eachMovie.Title}</p>
 
-              {!(this.props.finished.includes(eachMovie) ||
-                this.props.want.includes(eachMovie)) &&
+              {!(this.props.finished.map(elem => elem.Title ).includes(eachMovie.Title) ||
+                (this.props.want.map(elem => elem.Title ).includes(eachMovie.Title)))  &&
 
                 (<div key={index}>
                   <button
